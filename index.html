@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شبكة المعلومات لتبادل المهارات التكنولوجية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">شبكة المعلومات</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="skills.html">المهارات التكنولوجية</a></li>
+                <li><a href="exchange.html">تبادل المهارات</a></li>
+                <li><a href="add_skill.html">إضافة مهارة</a></li>
+                <li><a href="evaluate.html">تقييم المهارات</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>مرحباً بك في شبكة المعلومات</h1>
+            <p>منصة تبادل المهارات التكنولوجية الأولى في المنطقة العربية</p>
+            <a href="skills.html" class="btn">استكشف المهارات</a>
+        </section>
+
+        <section class="section fade-in">
+            <h2>ما نقدمه</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="تبادل المهارات">
+                    <h3>تبادل المهارات</h3>
+                    <p>شارك مهاراتك التكنولوجية مع الآخرين وتعلم مهارات جديدة من خلال منصتنا المتقدمة.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="تطوير الذات">
+                    <h3>تطوير الذات</h3>
+                    <p>طور مهاراتك المهنية من خلال دورات تدريبية وورش عمل متخصصة في مجال التكنولوجيا.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="شبكة مهنية">
+                    <h3>شبكة مهنية</h3>
+                    <p>تواصل مع متخصصين في مجال التكنولوجيا وأنشئ علاقات مهنية قوية.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <h2>البحث عن مهارة</h2>
+            <div class="form-container">
+                <form method="GET" action="exchange.html">
+                    <div class="form-group">
+                        <label for="search">البحث عن مهارة:</label>
+                        <input type="text" id="search" name="search" placeholder="اكتب اسم المهارة أو الفئة..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category_filter">تصفية حسب الفئة:</label>
+                        <select id="category_filter" name="category">
+                            <option value="">جميع الفئات</option>
+                            <option value="تطوير الويب">تطوير الويب</option>
+                            <option value="الذكاء الاصطناعي">الذكاء الاصطناعي</option>
+                            <option value="أمن المعلومات">أمن المعلومات</option>
+                            <option value="تحليل البيانات">تحليل البيانات</option>
+                            <option value="تطوير التطبيقات">تطوير التطبيقات</option>
+                            <option value="إنترنت الأشياء">إنترنت الأشياء</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level_filter">تصفية حسب المستوى:</label>
+                        <select id="level_filter" name="level">
+                            <option value="">جميع المستويات</option>
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">البحث والتبادل</button>
+                </form>
+            </div>-
+        </section>
+
+        <section class="section fade-in">
+            <h2>إحصائياتنا</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>5000+</h3>
+                    <p>مستخدم نشط</p>
+                </div>
+                <div class="card">
+                    <h3>1000+</h3>
+                    <p>مهارة متاحة</p>
+                </div>
+                <div class="card">
+                    <h3>500+</h3>
+                    <p>دورة تدريبية</p>
+                </div>
+                <div class="card">
+                    <h3>95%</h3>
+                    <p>رضا المستخدمين</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        //تحميل محتوى PHP باستخدام fetch
+        fetch('index.php')
+        .then(Response=> Response.text())
+        .then(data=> {
+            document.getElementById('php-index').innerHTML = data;
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 شبكة المعلومات لتبادل المهارات التكنولوجية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

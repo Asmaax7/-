@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة مهارة - شبكة المعلومات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">شبكة المعلومات</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="skills.html">المهارات التكنولوجية</a></li>
+                <li><a href="exchange.html">تبادل المهارات</a></li>
+                <li><a href="add_skill.html">إضافة مهارة</a></li>
+                <li><a href="evaluate.html">تقييم المهارات</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>إضافة مهارة جديدة</h1>
+            <p>شارك مهاراتك مع المجتمع وابدأ في تدريس الآخرين</p>
+        </section>
+
+        <section class="section fade-in">
+            <div class="form-container">
+                <h2>معلومات المهارة</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="skill-name">اسم المهارة</label>
+                        <input type="text" id="skill-name" name="skill-name" placeholder="مثال: تطوير تطبيقات Android" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">الفئة</label>
+                        <select id="category" name="category" required>
+                            <option value="">اختر الفئة</option>
+                            <option value="web">تطوير الويب</option>
+                            <option value="ai">الذكاء الاصطناعي</option>
+                            <option value="security">أمن المعلومات</option>
+                            <option value="data">تحليل البيانات</option>
+                            <option value="mobile">تطوير التطبيقات</option>
+                            <option value="iot">إنترنت الأشياء</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">المستوى المطلوب</label>
+                        <select id="level" name="level" required>
+                            <option value="">اختر المستوى</option>
+                            <option value="beginner">مبتدئ</option>
+                            <option value="intermediate">متوسط</option>
+                            <option value="advanced">متقدم</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">وصف المهارة</label>
+                        <textarea id="description" name="description" rows="4" placeholder="وصف مفصل للمهارة والمحتوى الذي ستغطيه..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">مدة الدورة (بالأسابيع)</label>
+                        <input type="number" id="duration" name="duration" min="1" max="52" placeholder="4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">السعر (بالريال)</label>
+                        <input type="number" id="price" name="price" min="0" step="10" placeholder="500" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">الموقع</label>
+                        <input type="text" id="location" name="location" placeholder="المدينة أو عبر الإنترنت" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">معلومات التواصل</label>
+                        <input type="email" id="contact" name="contact" placeholder="البريد الإلكتروني أو رقم الهاتف" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prerequisites">المتطلبات المسبقة</label>
+                        <textarea id="prerequisites" name="prerequisites" rows="3" placeholder="ما هي المهارات أو المعرفة المطلوبة مسبقاً؟"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="materials">المواد المطلوبة</label>
+                        <textarea id="materials" name="materials" rows="3" placeholder="ما هي الأدوات أو البرامج المطلوبة؟"></textarea>
+                    </div>
+                    <button type="submit" class="btn">إضافة المهارة</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <h2>نصائح لإضافة مهارة ناجحة</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>كن واضحاً في الوصف</h3>
+                    <p>اكتب وصفاً مفصلاً يوضح ما سيحصل عليه المتعلم من الدورة.</p>
+                </div>
+                <div class="card">
+                    <h3>حدد المستوى بدقة</h3>
+                    <p>اختر المستوى المناسب لضمان رضا المتعلمين ونجاح الدورة.</p>
+                </div>
+                <div class="card">
+                    <h3>أضف تفاصيل التواصل</h3>
+                    <p>تأكد من توفر معلومات التواصل للمتعلمين المهتمين.</p>
+                </div>
+                <div class="card">
+                    <h3>حدد سعراً مناسباً</h3>
+                    <p>ضع سعراً عادلاً يعكس قيمة المهارة والجهد المبذول.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        //تحميل محتوى PHP باستخدام fetch
+        fetch('add_skill.php')
+        .then(Response=> Response.text())
+        .then(data=> {
+            document.getElementById('php-add_skill').innerHTML = data;
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 شبكة المعلومات لتبادل المهارات التكنولوجية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبادل المهارات - شبكة المعلومات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">شبكة المعلومات</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="skills.html">المهارات التكنولوجية</a></li>
+                <li><a href="exchange.html">تبادل المهارات</a></li>
+                <li><a href="add_skill.html">إضافة مهارة</a></li>
+                <li><a href="evaluate.html">تقييم المهارات</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>تبادل المهارات</h1>
+            <p>مكان مثالي لتبادل المهارات والمعرفة بين الأعضاء، تعلم مهارة جديدة مقابل تدريس مهارة أخرى</p>
+        </section>
+
+        <section class="section fade-in">
+            <h2>كيف يعمل تبادل المهارات؟</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>اختر مهارة تريد تعلمها</h3>
+                    <p>تصفح المهارات المتاحة واختر ما يناسب احتياجاتك التعليمية.</p>
+                </div>
+                <div class="card">
+                    <h3>قدم مهارة مقابلها</h3>
+                    <p>شارك مهاراتك الخاصة كمقابل لتعلم المهارة المطلوبة.</p>
+                </div>
+                <div class="card">
+                    <h3>ابدأ التبادل</h3>
+                    <p>تواصل مع الشريك وابدأ رحلة التعلم المتبادل.</p>
+                </div>
+                <div class="card">
+                    <h3>قيم التجربة</h3>
+                    <p>أعطِ تقييماً للتبادل وشارك تجربتك مع المجتمع.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <h2>البحث عن مهارة</h2>
+            <div class="form-container">
+                <form method="GET" action="exchange.html">
+                    <div class="form-group">
+                        <label for="search">البحث عن مهارة:</label>
+                        <input type="text" id="search" name="search" placeholder="اكتب اسم المهارة أو الفئة..." value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="category_filter">تصفية حسب الفئة:</label>
+                        <select id="category_filter" name="category">
+                            <option value="">جميع الفئات</option>
+                            <option value="تطوير الويب">تطوير الويب</option>
+                            <option value="الذكاء الاصطناعي">الذكاء الاصطناعي</option>
+                            <option value="أمن المعلومات">أمن المعلومات</option>
+                            <option value="تحليل البيانات">تحليل البيانات</option>
+                            <option value="تطوير التطبيقات">تطوير التطبيقات</option>
+                            <option value="إنترنت الأشياء">إنترنت الأشياء</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level_filter">تصفية حسب المستوى:</label>
+                        <select id="level_filter" name="level">
+                            <option value="">جميع المستويات</option>
+                            <option value="مبتدئ">مبتدئ</option>
+                            <option value="متوسط">متوسط</option>
+                            <option value="متقدم">متقدم</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">البحث</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <h2>المهارات المتاحة للتبادل</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Python">
+                    <h3>دورة Python الشاملة</h3>
+                    <p><strong>المدرب:</strong> أحمد محمد علي</p>
+                    <p><strong>الفئة:</strong> تطوير الويب</p>
+                    <p><strong>المستوى:</strong> مبتدئ</p>
+                    <p><strong>المدة:</strong> 8 أسبوع</p>
+                    <p><strong>الموقع:</strong> عبر الإنترنت</p>
+                    <p>تعلم Python من الصفر إلى الاحتراف مع مشاريع عملية...</p>
+                    <div class="exchange-actions">
+                        <a href="mailto:ahmed.mohamed@example.com?subject=طلب تبادل مهارة: دورة Python الشاملة&body=مرحباً، أنا مهتم بتبادل المهارة معك. مهاراتي: [اكتب مهاراتك هنا]" class="btn">اطلب التبادل</a>
+                        <button class="btn btn-secondary" onclick="showExchangeModal('1', 'دورة Python الشاملة')">اقترح تبادلاً</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="أمن المعلومات">
+                    <h3>أساسيات الأمن السيبراني</h3>
+                    <p><strong>المدرب:</strong> فاطمة سالم حسن</p>
+                    <p><strong>الفئة:</strong> أمن المعلومات</p>
+                    <p><strong>المستوى:</strong> متوسط</p>
+                    <p><strong>المدة:</strong> 5 أسبوع</p>
+                    <p><strong>الموقع:</strong> جدة</p>
+                    <p>تعلم كيفية حماية الأنظمة والشبكات من التهديدات الرقمية...</p>
+                    <div class="exchange-actions">
+                        <a href="mailto:fatima.salem@example.com?subject=طلب تبادل مهارة: أساسيات الأمن السيبراني&body=مرحباً، أنا مهتم بتبادل المهارة معك. مهاراتي: [اكتب مهاراتك هنا]" class="btn">اطلب التبادل</a>
+                        <button class="btn btn-secondary" onclick="showExchangeModal('2', 'أساسيات الأمن السيبراني')">اقترح تبادلاً</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Android">
+                    <h3>تطوير تطبيقات Android</h3>
+                    <p><strong>المدرب:</strong> محمد عبدالله خالد</p>
+                    <p><strong>الفئة:</strong> تطوير التطبيقات</p>
+                    <p><strong>المستوى:</strong> متوسط</p>
+                    <p><strong>المدة:</strong> 10 أسبوع</p>
+                    <p><strong>الموقع:</strong> الرياض</p>
+                    <p>أتقن تطوير تطبيقات Android باستخدام Java وKotlin...</p>
+                    <div class="exchange-actions">
+                        <a href="mailto:mohamed.abdullah@example.com?subject=طلب تبادل مهارة: تطوير تطبيقات Android&body=مرحباً، أنا مهتم بتبادل المهارة معك. مهاراتي: [اكتب مهاراتك هنا]" class="btn">اطلب التبادل</a>
+                        <button class="btn btn-secondary" onclick="showExchangeModal('3', 'تطوير تطبيقات Android')">اقترح تبادلاً</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="AI">
+                    <h3>مقدمة في الذكاء الاصطناعي</h3>
+                    <p><strong>المدرب:</strong> سارة أحمد يوسف</p>
+                    <p><strong>الفئة:</strong> الذكاء الاصطناعي</p>
+                    <p><strong>المستوى:</strong> مبتدئ</p>
+                    <p><strong>المدة:</strong> 6 أسبوع</p>
+                    <p><strong>الموقع:</strong> عبر الإنترنت</p>
+                    <p>استكشف عالم الذكاء الاصطناعي والتعلم الآلي...</p>
+                    <div class="exchange-actions">
+                        <a href="mailto:sara.ahmed@example.com?subject=طلب تبادل مهارة: مقدمة في الذكاء الاصطناعي&body=مرحباً، أنا مهتم بتبادل المهارة معك. مهاراتي: [اكتب مهاراتك هنا]" class="btn">اطلب التبادل</a>
+                        <button class="btn btn-secondary" onclick="showExchangeModal('4', 'مقدمة في الذكاء الاصطناعي')">اقترح تبادلاً</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="تحليل البيانات">
+                    <h3>تحليل البيانات باستخدام Python</h3>
+                    <p><strong>المدرب:</strong> علي حسن محمد</p>
+                    <p><strong>الفئة:</strong> تحليل البيانات</p>
+                    <p><strong>المستوى:</strong> متوسط</p>
+                    <p><strong>المدة:</strong> 8 أسبوع</p>
+                    <p><strong>الموقع:</strong> الدمام</p>
+                    <p>تعلم تحليل البيانات واستخراج الرؤى باستخدام Python...</p>
+                    <div class="exchange-actions">
+                        <a href="mailto:ali.hassan@example.com?subject=طلب تبادل مهارة: تحليل البيانات باستخدام Python&body=مرحباً، أنا مهتم بتبادل المهارة معك. مهاراتي: [اكتب مهاراتك هنا]" class="btn">اطلب التبادل</a>
+                        <button class="btn btn-secondary" onclick="showExchangeModal('5', 'تحليل البيانات باستخدام Python')">اقترح تبادلاً</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <h2>نصائح لتبادل ناجح</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>كن واضحاً في توقعاتك</h3>
+                    <p>حدد بوضوح ما تريد تعلمه وما يمكنك تقديمه في المقابل.</p>
+                </div>
+                <div class="card">
+                    <h3>ابدأ بجلسات قصيرة</h3>
+                    <p>ابدأ بجلسات تعليمية قصيرة للتأكد من توافق الطرفين.</p>
+                </div>
+                <div class="card">
+                    <h3>استخدم أدوات التواصل</h3>
+                    <p>استخدم Zoom، Google Meet، أو Discord للجلسات عبر الإنترنت.</p>
+                </div>
+                <div class="card">
+                    <h3>شارك المعرفة بحرية</h3>
+                    <p>تذكر أن الهدف هو بناء مجتمع تعليمي قوي ومفيد للجميع.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- نافذة اقتراح التبادل -->
+        <div id="exchangeModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeExchangeModal()">&times;</span>
+                <h2>اقتراح تبادل مهارة</h2>
+                <form id="exchangeForm">
+                    <div class="form-group">
+                        <label for="offered_skill">المهارة التي تقدمها:</label>
+                        <input type="text" id="offered_skill" name="offered_skill" placeholder="مثال: تطوير مواقع ويب" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exchange_message">رسالة التبادل:</label>
+                        <textarea id="exchange_message" name="exchange_message" rows="4" placeholder="اكتب رسالة توضح مهاراتك وكيف يمكن أن يكون التبادل مفيداً لكلا الطرفين..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">إرسال الاقتراح</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        //تحميل محتوى PHP باستخدام fetch
+        fetch('exchange.php')
+        .then(Response=> Response.text())
+        .then(data=> {
+            document.getElementById('php-exchange').innerHTML = data;
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 شبكة المعلومات لتبادل المهارات التكنولوجية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function showExchangeModal(skillId, skillName) {
+            document.getElementById('exchangeModal').style.display = 'block';
+            document.getElementById('exchangeForm').action = 'mailto:?subject=اقتراح تبادل لمهارة: ' + skillName + '&body=' + encodeURIComponent(document.getElementById('exchange_message').value);
+        }
+
+        function closeExchangeModal() {
+            document.getElementById('exchangeModal').style.display = 'none';
+        }
+
+        // إغلاق النافذة عند النقر خارجها
+        window.onclick = function(event) {
+            var modal = document.getElementById('exchangeModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
